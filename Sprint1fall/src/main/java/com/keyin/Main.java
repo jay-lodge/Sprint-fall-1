@@ -70,4 +70,3 @@ public class Main {
         }
     }
 }
-// I hate this IDE, gl brandon this should work or i'll cry - jayden 7:31am :)
