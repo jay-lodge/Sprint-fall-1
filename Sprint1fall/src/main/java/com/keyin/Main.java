@@ -49,18 +49,18 @@ public class Main {
                     int taskNumber = scanner.nextInt();
                     Task taskToMark = taskList.getTasks().get(taskNumber - 1);
                     taskToMark.markCompleted();
-                    System.out.println("Task marked as completed!");
+                    System.out.println("Task marked as completed");
                     break;
                 case 4:
                     System.out.print("Enter the task number to delete: ");
                     int taskToDelete = scanner.nextInt();
                     Task taskToDeleteObj = taskList.getTasks().get(taskToDelete - 1);
                     taskList.removeTask(taskToDeleteObj);
-                    System.out.println("Task deleted!");
+                    System.out.println("Task deleted");
                     break;
                 case 5:
                     taskList.saveTasksToFile(user.getName() + "_tasks.txt");
-                    System.out.println("Tasks saved. Goodbye, " + user.getName() + "!");
+                    System.out.println("Tasks saved. Goodbye " + user.getName());
                     System.exit(0);
                     break;
                 default:
